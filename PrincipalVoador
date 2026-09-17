@@ -1,0 +1,16 @@
+package exinte;
+
+public class Principal {
+
+	public static void main(String[] args) {
+
+		Voador helicoptero = new Helicoptero();
+		Voador aviao = new Aviao();
+		Voador disco = new DiscoVoador();
+
+		helicoptero.voar();
+		aviao.voar();
+		disco.voar();
+	}
+}
+
