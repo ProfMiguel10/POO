@@ -1,0 +1,13 @@
+package classes;
+
+public class Principal {
+	public static void main(String[] args) {
+		Aluno aluno = new Aluno("Antonio", "anto@email.com", "Ciência da Computação");
+		Professor professor = new Professor("Clara", "clara@email.com", "Programação Orientada a Objetos");
+		aluno.apresentar();
+		aluno.exibirPerfil();
+		System.out.println();
+		professor.apresentar();
+		professor.exibirPerfil();
+	}
+}
