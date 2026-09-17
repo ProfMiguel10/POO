@@ -1,0 +1,12 @@
+package ensino;
+
+public class PrincipalAluno {
+	public static void main(String[] args) {
+		Aluno aluno = new Aluno();
+
+		aluno.nome = "João";
+		aluno.idade = 20;
+
+		aluno.apresentar();
+	}
+}
