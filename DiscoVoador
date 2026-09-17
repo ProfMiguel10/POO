@@ -1,0 +1,7 @@
+public class DiscoVoador implements Voador {
+
+    @Override
+    public void voar() {
+        System.out.println("O disco voador está voando utilizando tecnologia extraterrestre.");
+    }
+}
