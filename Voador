@@ -1,0 +1,6 @@
+package exinte;
+
+public interface Voador {
+
+	void voar();
+}
