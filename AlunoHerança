@@ -1,0 +1,18 @@
+package classes;
+
+public class Aluno extends Usuario {
+
+    String curso;
+
+    public Aluno(String nome, String email, String curso) {
+        super(nome, email);
+        this.curso = curso;
+    }
+
+    @Override
+    public void exibirPerfil() {
+        System.out.println("Perfil: Aluno");
+        System.out.println("Nome: " + nome);
+        System.out.println("Curso: " + curso);
+    }
+}
