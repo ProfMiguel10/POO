@@ -1,0 +1,13 @@
+package classes;
+
+public class Coordenador extends Usuario {
+	public Coordenador(String nome, String email) {
+		super(nome, email);
+	}
+	@Override
+	public void exibirPerfil() {
+		System.out.println("Perfil: Coordenador");
+		System.out.println("Nome: " + nome);
+		System.out.println("Responsável pela gestão acadêmica.");
+	}
+}
