@@ -1,0 +1,42 @@
+package repeticao;
+
+import java.util.Scanner;
+
+public class AnaliseSentimentos {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("=== IA - Análise de Sentimento ===");
+		System.out.print("Digite uma frase: ");
+		String frase = scanner.nextLine().toLowerCase();
+		String[] palavrasPositivas = { "bom", "ótimo", "excelente", "feliz", "gostei", "maravilhoso", "legal", "amor" };
+		String[] palavrasNegativas = { "ruim", "péssimo", "horrível", "triste", "odiei", "terrível", "problema",
+				"raiva" };
+		int pontosPositivos = 0;
+		int pontosNegativos = 0;
+		// Procura palavras positivas
+		for (String palavra : palavrasPositivas) {
+			if (frase.contains(palavra)) {
+				pontosPositivos++;
+			}
+		}
+		// Procura palavras negativas
+		for (String palavra : palavrasNegativas) {
+			if (frase.contains(palavra)) {
+				pontosNegativos++;
+			}
+		}
+		System.out.println("\nAnalisando a mensagem...");
+		if (pontosPositivos > pontosNegativos) {
+			System.out.println("Resultado: SENTIMENTO POSITIVO");
+			System.out.println("Confiança: " + pontosPositivos + " pontos positivos.");
+		} else if (pontosNegativos > pontosPositivos) {
+			System.out.println("Resultado: SENTIMENTO NEGATIVO");
+			System.out.println("Confiança: " + pontosNegativos + " pontos negativos.");
+		} else {
+			System.out.println("Resultado: SENTIMENTO NEUTRO");
+		}
+
+		scanner.close();
+	}
+}
