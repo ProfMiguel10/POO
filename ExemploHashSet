@@ -1,0 +1,24 @@
+package colecao;
+
+import java.util.HashSet;
+public class ExemploHashSet {
+    public static void main(String[] args) {
+
+        HashSet<String> pessoas = new HashSet<>();
+
+        pessoas.add("Lila");
+        pessoas.add("Clara");
+        pessoas.add("Andressa");
+        pessoas.add("Lila");
+        pessoas.add("Clara");
+
+        System.out.println("Pessoas cadastradas:");
+        System.out.println(pessoas);
+
+        System.out.println("\nQuantidade de pessoas:");
+        System.out.println(pessoas.size());
+
+        System.out.println("\nLila está cadastrada?");
+        System.out.println(pessoas.contains("Lila"));
+    }
+}
