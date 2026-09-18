@@ -1,0 +1,24 @@
+package colecao;
+
+import java.util.HashMap;
+
+public class ExemploHashMap {
+
+    public static void main(String[] args) {
+
+        HashMap<Integer, String> pessoas = new HashMap<>();
+
+        pessoas.put(101, "Lila");
+        pessoas.put(102, "Clara");
+        pessoas.put(103, "Andressa");
+
+        System.out.println("Pessoas cadastradas:");
+        System.out.println(pessoas);
+
+        System.out.println("\nPessoa da matrícula 102:");
+        System.out.println(pessoas.get(102));
+
+        System.out.println("\nExiste a matrícula 103?");
+        System.out.println(pessoas.containsKey(103));
+    }
+}
