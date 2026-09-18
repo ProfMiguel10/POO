@@ -1,0 +1,27 @@
+package colecao;
+
+import java.util.LinkedList;
+
+public class ExemploLinkedList {
+
+    public static void main(String[] args) {
+
+        LinkedList<String> pessoas = new LinkedList<>();
+
+        pessoas.add("Lila");
+        pessoas.add("Clara");
+        pessoas.add("Andressa");
+
+        pessoas.addFirst("Lila");
+        pessoas.addLast("Clara");
+
+        System.out.println("Lista encadeada:");
+        System.out.println(pessoas);
+
+        System.out.println("\nPrimeira pessoa:");
+        System.out.println(pessoas.getFirst());
+
+        System.out.println("\nÚltima pessoa:");
+        System.out.println(pessoas.getLast());
+    }
+}
