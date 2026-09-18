@@ -1,0 +1,26 @@
+package colecao;
+
+import java.util.TreeSet;
+
+public class ExemploTreeSet {
+
+	public static void main(String[] args) {
+
+		TreeSet<String> pessoas = new TreeSet<>();
+
+		pessoas.add("Lila");
+		pessoas.add("Clara");
+		pessoas.add("Andressa");
+		pessoas.add("Lila");
+		pessoas.add("Clara");
+
+		System.out.println("Pessoas ordenadas:");
+		System.out.println(pessoas);
+
+		System.out.println("\nPrimeira pessoa:");
+		System.out.println(pessoas.first());
+
+		System.out.println("\nÚltima pessoa:");
+		System.out.println(pessoas.last());
+	}
+}
