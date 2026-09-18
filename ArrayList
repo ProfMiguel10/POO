@@ -1,0 +1,25 @@
+package colecao;
+
+import java.util.ArrayList;
+
+public class ExemploArrayList {
+
+    public static void main(String[] args) {
+
+        ArrayList<String> pessoas = new ArrayList<>();
+
+        pessoas.add("Lila");
+        pessoas.add("Clara");
+        pessoas.add("Andressa");
+        pessoas.add("Lila");
+
+        System.out.println("Lista de pessoas:");
+        System.out.println(pessoas);
+
+        System.out.println("\nPessoa na posição 1:");
+        System.out.println(pessoas.get(1));
+
+        System.out.println("\nQuantidade de pessoas:");
+        System.out.println(pessoas.size());
+    }
+}
