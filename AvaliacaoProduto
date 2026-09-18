@@ -1,0 +1,40 @@
+package selecao;
+
+import java.util.Scanner;
+
+public class AvaliacaoProduto {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Digite o preço do produto: ");
+		double preco = scanner.nextDouble();
+		System.out.print("Digite a nota do produto de 1 a 5: ");
+		int nota = scanner.nextInt();
+		if (preco <= 50) {
+			System.out.println("Categoria: Econômico.");
+		} else if (preco <= 200) {
+			System.out.println("Categoria: Intermediário.");
+		} else {
+			System.out.println("Categoria: Premium.");
+		}
+		switch (nota) {
+		case 1:
+			System.out.println("Avaliação: Muito ruim.");
+			break;
+		case 2:
+			System.out.println("Avaliação: Ruim.");
+			break;
+		case 3:
+			System.out.println("Avaliação: Regular.");
+			break;
+		case 4:
+			System.out.println("Avaliação: Boa.");
+			break;
+		case 5:
+			System.out.println("Avaliação: Excelente.");
+			break;
+		default:
+			System.out.println("Nota inválida.");
+		}
+		scanner.close();
+	}
+}
