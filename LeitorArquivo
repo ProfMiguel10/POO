@@ -1,0 +1,13 @@
+package arquivo;
+
+import java.io.FileReader;
+import java.io.IOException;
+
+public class LeitorArquivo {
+
+    public static void main(String[] args) throws IOException {
+
+        FileReader arquivo = new FileReader("dados.txt");
+        arquivo.close();
+    }
+}
