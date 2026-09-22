@@ -1,0 +1,13 @@
+package aplicacao;
+
+class Mago extends Personagem {
+
+	public Mago(String nome) {
+		super(nome, 100);
+	}
+
+	@Override
+	public void atacar() {
+		System.out.println(nome + " lançou uma bola de fogo!");
+	}
+}
