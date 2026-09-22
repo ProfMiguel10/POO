@@ -1,0 +1,13 @@
+package aplicacao;
+
+class Guerreiro extends Personagem {
+
+    public Guerreiro(String nome) {
+        super(nome, 150);
+    }
+
+    @Override
+    public void atacar() {
+        System.out.println(nome + " atacou com uma espada!");
+    }
+}
