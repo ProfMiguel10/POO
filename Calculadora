@@ -1,0 +1,14 @@
+package excecao;
+
+public class Calculadora {
+    public static void main(String[] args) {
+
+        try {
+            int resultado = 10 / 0;
+            System.out.println(resultado);
+
+        } catch (ArithmeticException e) {
+            System.out.println("Não é possível dividir por zero.");
+        }
+    }
+}
